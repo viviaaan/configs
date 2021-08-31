@@ -1,0 +1,56 @@
+history-limit 3
+max-items 20
+show-title-bar no
+#external-url-viewer "urlscan -dc --run 'mpv --ytdl-format=22 {}'" # 720p
+external-url-viewer "urlscan -dc --run 'mpv --ytdl-format=135 {}'" # 480p
+auto-reload yes
+
+bind-key j next
+bind-key k prev
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key g home
+bind-key G end
+bind-key h quit
+bind-key u pageup
+bind-key d pagedown
+bind-key l open
+bind-key o open-in-browser-and-mark-read
+bind-key O open-in-browser
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+
+browser brave
+# Macro to stream YouTube video in mpv
+macro v set browser mpv ; open-in-browser ; set browser brave
+
+# List highlighting colours
+
+    color listfocus black yellow standout bold
+    color info black black underline
+
+# Highlight colors for feedlist
+
+    highlight feedlist ".*" white default bold
+	highlight feedlist ".*([1-9]?[0-9]/[0-9][0-9]))" green
+	highlight feedlist "^.*(0/[0-9]?[0-9]))." red
+	highlight feedlist ".*([1-9]0/[0-9][0-9]))" green
+	highlight feedlist "^...[0-9][0-9]?" cyan default bold
+	highlight feedlist ".(You|Peer)Tube.$" red default bold
+
+
+# Highlight colors for articlelist
+
+    highlight articlelist ".*" white default bold
+    highlight articlelist "^.....?.................." black
+    highlight articlelist "^.....?........." yellow
+    highlight articlelist "^.....?" cyan default bold
+
+# Highlight colors for article
+
+	highlight article ".*" white default bold
+	highlight article "^Feed:.*|^Title:.*|Author:.*" cyan
+	highlight article "https?://[^ ]+" blue default underline
+	highlight article "^Link:|^Links:|.(link))$|\\[[0-9][0-9]*\\]" cyan default bold
+	highlight article "^Date:.*" yellow default bold

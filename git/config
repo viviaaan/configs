@@ -1,0 +1,8 @@
+[pull]
+	rebase = false
+
+[user]
+	name = viviaaan
+	email = viviansamuel42@gmail.com
+[init]
+	defaultBranch = main

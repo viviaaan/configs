@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/unknown/dat/repos/binconv/.git/branches'
+let g:netrw_dirhist_5='/home/unknown/dat/dwmblocks'
+let g:netrw_dirhist_4='/home/unknown/dat'
+let g:netrw_dirhist_3='/home/unknown/dat/journals'
+let g:netrw_dirhist_2='/home/unknown/dat'
+let g:netrw_dirhist_1='/home/unknown/.config/systemd/user/default.target.wants'
+let g:netrw_dirhist_0='/home/unknown/.config/autostart'
+let g:netrw_dirhist_9='/home/unknown/.config/nvim/skeletons'
+let g:netrw_dirhist_8='/home/unknown/.config/autostart'
+let g:netrw_dirhist_7='/home/unknown/.config/dunst'

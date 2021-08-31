@@ -1,0 +1,31 @@
+#!/bin/sh
+
+setwall() {
+    opt="$(printf 'maximize\nstretch' | dmenu -p "Choose wallpaper orientation")"
+    [ -z "$opt" ] && exit
+    xwallpaper --"$opt" "$file"
+    [ "$1" = "permanent" ] && perm_wall "$opt"
+}
+
+perm_wall() {
+    cp -n "$file" "$HOME/pics/wall/" # make sure file is in the wallpapers dir or put it there
+    [ -f "$XDG_CONFIG_HOME/X11/xinitrc" ] && sed -in "s/^xwallpaper.*$/xwallpaper\ --$1\ \"\$HOME\/pics\/wall\/$(basename "$file")\"\ \&/" "$XDG_CONFIG_HOME/X11/xinitrc"
+}
+
+rename() {
+    new_name="$(printf '' | dmenu -p "Rename file as")"
+    file_ext="${file##*.}"
+    [ -z "$new_name" ] && exit || mv "$file" "${file%/*}/$new_name.$file_ext" && exit
+}
+
+while read file; do
+    file="$(realpath $file)"
+    case "$1" in
+        "w") setwall ;;
+        "W") setwall "permanent" ;;
+        "d") dragon-drag-and-drop -x "$file" ;;
+        "x") rm "$file" ;;
+        "r") rename ;;
+        "c") printf "$file" | xclip -selection clipboard ;;
+    esac
+done

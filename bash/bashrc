@@ -1,0 +1,16 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+#PS1='\[\033[0;34m\][\[\033[1;33m\]\w\[\033[0;34m\]] \[\033[0;34m\]\$ \[\033[0;33m\]'
+# Black: 30 ; Blue: 34 ; Cyan: 36 ; Green: 32 ; Purple: 35 ; Red: 31 ; White: 37 ; Yellow: 33
+
+PS1='\[\033[1;30m\][\[\033[1;32m\]\w\[\033[0m\]\[\033[1;30m\]] \[\033[1;30m\]\$ \[\033[1;37m\]'
+
+#exports
+[ -f "$XDG_CONFIG_HOME/zsh/.zshenv" ] && source "$XDG_CONFIG_HOME/zsh/.zshenv"
+# Aliases
+[ -f "$XDG_CONFIG_HOME/shell_cm/aliases" ] && source "$XDG_CONFIG_HOME/shell_cm/aliases"

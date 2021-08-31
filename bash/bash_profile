@@ -1,0 +1,29 @@
+#
+# ~/.bash_profile
+#
+
+[[ -f $HOME/.config/bash/bashrc ]] && . "$HOME"/.config/bash/bashrc
+
+# General
+export PATH="$HOME/bin:$PATH"
+export EDITOR="nvim"
+# XDG
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+# ADB
+export ANDROID_SDK_HOME="$XDG_CONFIG_HOME/android"
+export ANDROID_VENDOR_KEY="$XDG_CONFIG_HOME/android"
+export ANDROID_AVD_HOME="$XDG_DATA_HOME/android/"
+export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME/android/"
+
+export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"         #Xauthority
+export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"      #Inputrc
+export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"           #Xinitrc
+export HISTFILE="$XDG_DATA_HOME/bash/history"           #Bash
+export LESSHISTFILE="-"                                 #Less
+
+# Start dwm if automatically if it is not running
+if [ "$(tty)" = "/dev/tty1" ]; then
+    pgrep -x dwm || exec startx "$XDG_CONFIG_HOME"/X11/xinitrc > /dev/null 2>&1
+fi
