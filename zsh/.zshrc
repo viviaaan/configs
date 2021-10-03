@@ -20,6 +20,7 @@ unsetopt beep nomatch notify
 stty stop undef
 zstyle :compinstall filename "$XDG_CONFIG_HOME/zsh/.zshrc"
 
+fpath=("$XDG_DATA_HOME/zsh/completions" $fpath)
 autoload -Uz compinit
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' menu select

@@ -138,7 +138,7 @@ nmap Q ZQ
     autocmd BufRead ~/dat/journals/*.txt :normal G
     autocmd BufRead,BufNewFile ~/dat/journals/* :set textwidth=132
 
-" the following are programming autocmds
+" the following autocmds are for programming ease of access
 " <leader>c is for compile, <leader>x is for execute, <leader>d is for executing in another window(d for debugging)
 
 " compile
@@ -148,21 +148,12 @@ autocmd FileType c,cpp,haskell,python,asm :map <leader>c :w! \| !"$HOME/bin/comp
 autocmd FileType c,cpp,haskell,asm :map <leader>x :!st -t swallow /bin/sh -c "sleep 0.1 ; %:p:r ; echo '\nexit code : $?' ; sleep 1000000"<CR><CR>
 autocmd FileType python :map <leader>x :w! \| !st -t swallow /bin/sh -c "sleep 0.1 ; python %:p ; echo '\nexit code : $?' ; sleep 1000000"<CR><CR>
 
+" make
+autocmd FileType c,cpp,haskell,python,asm :map <leader>m :w! \| ![ -f "%:p:h/Makefile" ] && cd %:p:h && make<CR>
+
 " open the corresponding pdf file of a groff/latex source file
   autocmd FileType groff,tex :map <leader>o :!setsid -f zathura -c "$XDG_CONFIG_HOME/zathura_white" %:p:r.pdf<CR><CR>
 
-" insert a basic C body for a new file
-autocmd BufNewFile *.c -1r $HOME/.config/nvim/skeletons/clang
-autocmd BufNewFile *.c :normal Gddgg
-
 " compile with modifiable options (the left's are to get the cursor into proper position to add options)
 autocmd FileType c :map <leader>C :w! \| !cc -pipe -Og -Wall %:p -o %:p:r<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
-" autocmd FileType cpp :map <leader>C :w! \| !g++ -pipe -Og -Wall %:p -o %:p:r<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
-
-
-" automatically insert a basic body for new file
-" autocmd BufNewFile *.tex -1r $HOME/.config/nvim/skeletons/latex
-
-
-" Compile as PostScript and convert to PDF
-" autocmd FileType groff :map <leader>p :w! \| !groff -ms -kept %:p -Tps > %:p:r.ps && ps2pdf %:p:r.ps
+autocmd FileType cpp :map <leader>C :w! \| !g++ -pipe -Og -Wall %:p -o %:p:r<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>

@@ -33,7 +33,7 @@ lyrics_directory = ~/music/lyrics
 ##
 mpd_music_dir = ~/music
 #
-mpd_crossfade_time = 2
+mpd_crossfade_time = 1
 #
 # Exclude pattern for random song action
 # http://www.boost.org/doc/libs/1_46_1/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html
@@ -440,7 +440,7 @@ space_add_mode = add_remove
 ## media_library, playlist_editor, tag_editor, outputs, visualizer, clock,
 ## lyrics, last_fm.
 ##
-#screen_switcher_mode = playlist, browser
+screen_switcher_mode = browser, playlist
 #
 ##
 ## Note: You can define startup screen by choosing screen from the list above.
