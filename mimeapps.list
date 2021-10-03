@@ -1,0 +1,9 @@
+[Default Applications]
+text/=nvim.desktop
+image/jpeg=sxiv.desktop
+image/png=sxiv.desktop
+image/webp=sxiv.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-WJZ100.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-WJZ100.desktop;

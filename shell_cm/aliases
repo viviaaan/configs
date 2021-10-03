@@ -1,0 +1,66 @@
+#!/bin/sh
+
+# Common Convenience Aliases
+alias v="nvim" \
+        r="ranger" \
+        z="zathura" \
+        ka="killall" \
+        pick="colorpicker --short" \
+        brt="light -G" \
+        df="df -h" \
+        du="du -h" \
+        su="sudo su" \
+        i="sxiv -b" \
+        grep="grep --color=auto" \
+        a="ls --classify --color=auto --human-readable" \
+        trm="transmission-remote" \
+        td="transmission-daemon" \
+        cux="chmod u+x" \
+        ghc="ghc -dynamic -no-keep-hi-files -no-keep-o-files -threaded -O" \
+        yey="yes | yay" \
+        music="setsid -f st -A 0 cava && sleep 0.1 && setsid -f xdotool key Super_L+j Super_L+o" \
+        kc="kdeconnect-cli -d2fbc2a7702bf5192" \
+        scrn="sxiv -bt ~/pics/scrn/*" \
+        beep="mpv --no-terminal ~/.local/alert.m4a" \
+        ffmpeg="ffmpeg -hide_banner" \
+        wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"" \
+        tpdf="libreoffice --convert-to pdf" \
+        ind="pacmd list-sources | grep -A1 index" \
+        backup="backmeup && adb push *backup.tar.gz /sdcard/ && rm *backup.tar.gz" \
+        kde="killall kdeconnectd ; setsid -f /usr/lib/kdeconnectd" \
+
+# Controls
+alias bls="bluetoothctl -- devices ; bluetoothctl" \
+        bcon="bluetoothctl -- connect 00:1E:7C:92:51:57" \
+        wls="nmcli device wifi list" \
+        wcon="nmcli device wifi connect" \
+
+
+        # wcon="while true;do\
+        #     nmcli dev wifi connect 'veeveeyan' && exit || \
+        #     sleep 2 && continue
+        # done"
+
+# Git
+# alias ga="git add" \
+#     gst="git status" \
+#     gpl="git pull" \
+#     gph="git push" \
+#     gc="git commit" \
+#     gch="git checkout" \
+#     gcl="git clone" \
+#     gl="git log" \
+#     gb="git branch" \
+#     gd="git diff" \
+
+# Shortcut to configure ssh-agent
+alias agent="eval \"$(ssh-agent -s)\" && ssh-add $HOME/.ssh/id_ed25519"
+
+# fuzzy search through configs
+alias se="du -a --exclude BraveSoftware --exclude Unknown\ Organization --exclude libreoffice --exclude GIMP --exclude gtk* --exclude kdeconnect ~/.config ~/bin | cut -f 2 | fzf --height=20 --reverse --info=hidden | xargs -r nvim" \
+        temp='while true; do
+            cputemp="$(cut -c -2 /sys/devices/virtual/thermal/thermal_zone0/temp)"
+            echo CPU : "$cputemp"°C
+            sleep 0.5
+            clear
+        done' \
