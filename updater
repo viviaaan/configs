@@ -7,4 +7,4 @@ cp -r $CONFIGS_DIR/{bash,dunst,git,mpd,ncmpcpp,nvim,python,sxiv,yay,zathura,zath
 
 git commit -a -m "$(date '+%Y_%m_%d-%H_%M_%S')"
 
-git push origin master
+git push origin main
