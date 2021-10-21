@@ -37,7 +37,8 @@ export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/startup.py"
 export PYTHONHISTFILE="$XDG_DATA_HOME/python/history"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export GROFF_TYPESETTER="pdf" #groff default formatting device
-export QT_QPA_PLATFORMTHEME="gtk2"
+export GTK_THEME="Adwaita:dark"
+export QT_QPA_PLATFORMTHEME="qt5ct"
 export KDEHOME="$XDG_CONFIG_HOME/kde"
 export SSB_HOME="$XDG_DATA_HOME/zoom"
 

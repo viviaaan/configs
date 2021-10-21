@@ -4,6 +4,7 @@ show-title-bar no
 #external-url-viewer "urlscan -dc --run 'mpv --ytdl-format=22 {}'" # 720p
 external-url-viewer "urlscan -dc --run 'mpv --ytdl-format=135 {}'" # 480p
 auto-reload yes
+reload-threads 10
 
 bind-key j next
 bind-key k prev
