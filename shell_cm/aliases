@@ -1,6 +1,8 @@
 #!/bin/sh
 
 # Common Convenience Aliases
+alias got="cd $HOME/dl/tor/game_of_thrones/Game\ of\ Thrones\ Season\ 6\ S06\ Complete\ 1080p\ WEB\ DL\ x265\ HEVC\ SUJAIDR"
+
 alias v="nvim" \
         r="ranger" \
         z="zathura" \
