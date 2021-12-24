@@ -20,7 +20,7 @@ redshift &
 
 (sleep 1 ; xcompmgr -c) &
 
-xwallpaper --maximize "$HOME/pics/wall/valar_morghulis.jpg" &
+xwallpaper --maximize "$HOME/pics/wall/game_of_thrones_ned_stark.jpg" &
 
 (sleep 1 ; echo 0 > "$HOME/dat/.batwarn") &
 
