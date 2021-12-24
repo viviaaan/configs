@@ -1,10 +1,8 @@
 #!/bin/bash
 
-DEST_DIR="$HOME/dat/repos/configs"
-CONFIGS_DIR="$XDG_CONFIG_HOME"
-
-cp -r $CONFIGS_DIR/{bash,dunst,git,mpd,ncmpcpp,nvim,python,sxiv,yay,zathura,zathura_white,cava,gh,libreoffice,mpv,newsboat,pulse,ranger,transmission,transmission-daemon,youtube-dl,zsh,shell_cm,locale.conf,mimeapps.list,stardict,xrdb,redshift.conf,X11} "$DEST_DIR"
-cp ~/.ssh/*.pub "$DEST_DIR"
+# cp -r $CONFIGS_DIR/{bash,dunst,git,mpd,ncmpcpp,nvim,python,sxiv,yay,zathura,zathura_white,cava,gh,libreoffice,mpv,newsboat,pulse,ranger,transmission,transmission-daemon,youtube-dl,zsh,shell_cm,locale.conf,mimeapps.list,stardict,xrdb,redshift.conf,X11} "$DEST_DIR"
+cp -r "$XDG_CONFIG_HOME" .
+cp ~/.ssh/*.pub .
 
 git add .
 git commit -a -m "$(date '+%Y_%m_%d-%H_%M_%S')"

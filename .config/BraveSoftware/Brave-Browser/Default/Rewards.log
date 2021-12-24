@@ -1,0 +1,25 @@
+[Dec 23, 2021, 5:41:35.7 PM:ERROR:client.cc(598)] Failed to save client state
+[Dec 23, 2021, 5:41:35.7 PM:ERROR:client.cc(598)] Failed to save client state
+--------------------------------------------------------------------------------
+[Dec 23, 2021, 5:48:37.0 PM:ERROR:publisher.cc(774)] Publisher info not found
+[Dec 23, 2021, 5:48:37.0 PM:ERROR:publisher.cc(774)] Publisher info not found
+[Dec 23, 2021, 5:48:37.0 PM:ERROR:publisher.cc(774)] Publisher info not found
+--------------------------------------------------------------------------------
+[Dec 23, 2021, 7:20:18.4 PM:ERROR:publisher.cc(774)] Publisher info not found
+--------------------------------------------------------------------------------
+[Dec 23, 2021, 7:27:11.2 PM:ERROR:publisher.cc(774)] Publisher info not found
+[Dec 23, 2021, 7:27:11.2 PM:ERROR:publisher.cc(774)] Publisher info not found
+[Dec 23, 2021, 7:29:02.2 PM:ERROR:publisher.cc(774)] Publisher info not found
+[Dec 23, 2021, 7:29:02.2 PM:ERROR:publisher.cc(774)] Publisher info not found
+--------------------------------------------------------------------------------
+[Dec 23, 2021, 8:29:53.5 PM:ERROR:publisher.cc(774)] Publisher info not found
+[Dec 23, 2021, 8:29:53.5 PM:ERROR:publisher.cc(774)] Publisher info not found
+--------------------------------------------------------------------------------
+[Dec 24, 2021, 8:51:41.4 AM:ERROR:publisher.cc(774)] Publisher info not found
+[Dec 24, 2021, 8:51:41.4 AM:ERROR:publisher.cc(774)] Publisher info not found
+--------------------------------------------------------------------------------
+[Dec 24, 2021, 1:00:33.0 PM:ERROR:get_available.cc(69)] Unexpected HTTP status: -1
+--------------------------------------------------------------------------------
+[Dec 24, 2021, 1:44:17.0 PM:ERROR:get_parameters.cc(53)] Unexpected HTTP status: -1
+[Dec 24, 2021, 1:46:36.8 PM:ERROR:get_available.cc(69)] Unexpected HTTP status: -1
+[Dec 24, 2021, 1:47:49.0 PM:ERROR:publisher.cc(774)] Publisher info not found
