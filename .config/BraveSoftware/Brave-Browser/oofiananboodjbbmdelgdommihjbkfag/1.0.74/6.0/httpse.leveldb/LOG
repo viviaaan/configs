@@ -1,7 +1,7 @@
-2021/12/24-16:13:18.509 21ed5 Recovering log #3
-2021/12/24-16:13:18.719 21ed5 Level-0 table #5: started
-2021/12/24-16:13:18.862 21ed5 Level-0 table #5: 2784294 bytes OK
-2021/12/24-16:13:18.869 21ed5 Recovering log #39
-2021/12/24-16:13:18.880 21ed5 Delete type=0 #3
-2021/12/24-16:13:18.880 21ed5 Delete type=3 #2
-2021/12/24-16:13:18.880 21ed5 Delete type=0 #39
+2021/12/24-16:23:21.381 237e7 Recovering log #3
+2021/12/24-16:23:21.587 237e7 Level-0 table #5: started
+2021/12/24-16:23:21.709 237e7 Level-0 table #5: 2784294 bytes OK
+2021/12/24-16:23:21.715 237e7 Recovering log #40
+2021/12/24-16:23:21.728 237e7 Delete type=0 #3
+2021/12/24-16:23:21.728 237e7 Delete type=3 #2
+2021/12/24-16:23:21.728 237e7 Delete type=0 #40
