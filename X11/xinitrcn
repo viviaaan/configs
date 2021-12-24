@@ -1,0 +1,9 @@
+/usr/lib/kdeconnectd &
+
+(sleep 1 ; xcompmgr -c) &
+
+xwallpaper
+
+"$HOME/bin/reloadwm"
+
+exec dwm

@@ -1,0 +1,29 @@
+mpd &
+
+xrdb -merge -I$HOME "$XDG_CONFIG_HOME/xrdb/Xresources"
+
+"$HOME/bin/remaps" &
+
+syncthing -no-browser &
+
+unclutter --timeout 1 --jitter 2 &
+
+transmission-daemon &
+
+dwmblocks &
+
+dunst &
+
+redshift &
+
+/usr/lib/kdeconnectd &
+
+(sleep 1 ; xcompmgr -c) &
+
+xwallpaper --maximize "$HOME/pics/wall/game_of_thrones_ned_stark.jpg" &
+
+(sleep 1 ; echo 0 > "$HOME/dat/.batwarn") &
+
+"$HOME/bin/reloadwm"
+
+exec dwm
