@@ -4,12 +4,12 @@
 
 --add-metadata
 
+--embed-thumbnail
+
 --restrict-filenames
 
 --format "bestaudio[ext=mp3]/bestaudio[ext!=opus]/best[ext!=opus]"
 
 --audio-format mp3
-
---audio-quality 0
 
 --output ~/music/%(track)s-%(artist)s.%(ext)s

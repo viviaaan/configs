@@ -20,7 +20,7 @@
     "idle-seeding-limit-enabled": false,
     "incomplete-dir": "/home/unknown/dl/tor/pend",
     "incomplete-dir-enabled": true,
-    "lpd-enabled": false,
+    "lpd-enabled": true,
     "message-level": 2,
     "peer-congestion-algorithm": "",
     "peer-id-ttl-hours": 6,
