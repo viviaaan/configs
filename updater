@@ -4,6 +4,8 @@
 cp -r "$XDG_CONFIG_HOME" .
 cp ~/.ssh/*.pub .
 
+rm -rd ./.config/BraveSoftware
+
 git add .
 git commit -a -m "$(date '+%Y_%m_%d-%H_%M_%S')"
 
