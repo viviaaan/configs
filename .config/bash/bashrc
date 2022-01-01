@@ -10,6 +10,8 @@
 
 PS1='\[\033[1;30m\][\[\033[1;32m\]\w\[\033[0m\]\[\033[1;30m\]] \[\033[1;30m\]\$ \[\033[1;37m\]'
 
+set -o vi
+
 #exports
 [ -f "$XDG_CONFIG_HOME/zsh/.zshenv" ] && source "$XDG_CONFIG_HOME/zsh/.zshenv"
 # Aliases

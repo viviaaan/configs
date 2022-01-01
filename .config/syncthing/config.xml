@@ -1,4 +1,40 @@
 <configuration version="35">
+    <folder id="7buun-upp8c" label="music" path="/home/unknown/music" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="KYDYH46-EWKALEH-TBH7BK4-WUJZQI7-7GH6ESB-E7KWTR6-RT4DUL5-LLJDCQV" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="LBVFIJH-4ADWD44-IMBMHHO-ZGY3E7Y-LXCDUPF-5U5WL7S-SYPQUK4-AATBIQB" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+            <fsPath></fsPath>
+            <fsType>basic</fsType>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+    </folder>
     <folder id="j7pn2-fhgai" label="details" path="/home/unknown/dat/details" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
         <device id="KYDYH46-EWKALEH-TBH7BK4-WUJZQI7-7GH6ESB-E7KWTR6-RT4DUL5-LLJDCQV" introducedBy="">
@@ -36,42 +72,6 @@
         <junctionsAsDirs>false</junctionsAsDirs>
     </folder>
     <folder id="pm9qi-6ac95" label="todo" path="/home/unknown/dat/todo" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
-        <filesystemType>basic</filesystemType>
-        <device id="KYDYH46-EWKALEH-TBH7BK4-WUJZQI7-7GH6ESB-E7KWTR6-RT4DUL5-LLJDCQV" introducedBy="">
-            <encryptionPassword></encryptionPassword>
-        </device>
-        <device id="LBVFIJH-4ADWD44-IMBMHHO-ZGY3E7Y-LXCDUPF-5U5WL7S-SYPQUK4-AATBIQB" introducedBy="">
-            <encryptionPassword></encryptionPassword>
-        </device>
-        <minDiskFree unit="%">1</minDiskFree>
-        <versioning>
-            <cleanupIntervalS>3600</cleanupIntervalS>
-            <fsPath></fsPath>
-            <fsType>basic</fsType>
-        </versioning>
-        <copiers>0</copiers>
-        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
-        <hashers>0</hashers>
-        <order>random</order>
-        <ignoreDelete>false</ignoreDelete>
-        <scanProgressIntervalS>0</scanProgressIntervalS>
-        <pullerPauseS>0</pullerPauseS>
-        <maxConflicts>10</maxConflicts>
-        <disableSparseFiles>false</disableSparseFiles>
-        <disableTempIndexes>false</disableTempIndexes>
-        <paused>false</paused>
-        <weakHashThresholdPct>25</weakHashThresholdPct>
-        <markerName>.stfolder</markerName>
-        <copyOwnershipFromParent>false</copyOwnershipFromParent>
-        <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>2</maxConcurrentWrites>
-        <disableFsync>false</disableFsync>
-        <blockPullOrder>standard</blockPullOrder>
-        <copyRangeMethod>standard</copyRangeMethod>
-        <caseSensitiveFS>false</caseSensitiveFS>
-        <junctionsAsDirs>false</junctionsAsDirs>
-    </folder>
-    <folder id="r3pr9-uptkq" label="music" path="/home/unknown/music" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
         <device id="KYDYH46-EWKALEH-TBH7BK4-WUJZQI7-7GH6ESB-E7KWTR6-RT4DUL5-LLJDCQV" introducedBy="">
             <encryptionPassword></encryptionPassword>

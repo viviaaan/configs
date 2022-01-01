@@ -8,7 +8,7 @@
 
 --restrict-filenames
 
---format "bestaudio[ext=mp3]/bestaudio[ext!=opus]/best[ext!=opus]"
+--format "bestaudio"
 
 --audio-format mp3
 

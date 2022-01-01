@@ -1,7 +1,7 @@
 Xft.autohint: 1
 Xft.antialias: 1
 Xft.dpi: 96
-*.font: hack:size=10
+*.font: hack:size=14
 *.background: gray
 *.foreground: black
 Xcursor.size: 16

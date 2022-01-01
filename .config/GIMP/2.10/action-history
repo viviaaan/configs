@@ -1,0 +1,10 @@
+# GIMP action-history
+
+(history-item "tools-clone" 0)
+(history-item "file-export-as" 0)
+(history-item "file-export" 1)
+(history-item "tools-eraser" 0)
+(history-item "dialogs-keyboard-shortcuts" 0)
+(history-item "file-quit" 1)
+
+# end of action-history

@@ -73,26 +73,7 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use block shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use block shape cursor for each new prompt.
 
-# zle -N zle-keymap-select
-# zle-line-init() {
-#     echo -ne "\e[5 q"
-# }
-# zle -N zle-line-init
-# echo -ne '\e[5 q' # Use beam shape cursor on startup.
-# preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
-
 bindkey '^[[P' delete-char
-
-# # save path on cd
-# function cd {
-#     builtin cd "$@"
-#     pwd > "$HOME/dat/.last_dir"
-# }
-
-# # restore last saved path
-# if [ -f "$HOME/dat/.last_dir" ]
-#     then cd `cat "$HOME/dat/.last_dir"`
-# fi
 function new-term {
     setsid -f st > /dev/null 2>&1
 }
@@ -101,7 +82,6 @@ bindkey '^n' new-term
 
 # Aliases
 [ -f "$XDG_CONFIG_HOME/shell_cm/aliases" ] && source "$XDG_CONFIG_HOME/shell_cm/aliases"
-# [ -f "$HOME/bin/adb_completion" ] && source "$HOME/bin/adb_completion"
 
 # Syntax highlighing
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
